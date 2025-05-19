@@ -15,7 +15,11 @@ FilesReader::FilesReader(const string path) {
 vector<string> FilesReader::read_file_by_line() {
     vector<string> lines;
     string line ="";
-    file.open(path_file, ios::in);
+    try {
+        file.open(path_file, ios::in);
+    }catch (const std::exception& e) {
+        cout<<"you need fo check "<<path_file<<" file"<<endl;
+    }
     if (file.is_open()) {
         while (getline(file, line)) {
             lines.push_back(line);
@@ -29,7 +33,11 @@ vector<string> FilesReader::read_file_by_line() {
 vector<string> FilesReader::read_file_by_word() {
     vector<string> words;
     string word = "";
-    file.open(path_file, ios::in);
+   try {
+       file.open(path_file, ios::in);
+   }catch (const std::exception& e) {
+       cout<<"you need fo check "<<path_file<<" file"<<endl;
+   }
     if (file.is_open()) {
         while (file >> word) {
             words.push_back(word);

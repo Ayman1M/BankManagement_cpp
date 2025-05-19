@@ -4,8 +4,8 @@
 
 #include "../lib_h/Input.h"
 
-ll Input::getInt() {
-    ll x;
+long long Input::getInt() {
+    long long x;
     std::cin >> x;
     while (std::cin.fail()) {
         cin.clear();

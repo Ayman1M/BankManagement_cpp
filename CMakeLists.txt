@@ -17,4 +17,9 @@ add_executable(BankManagement_c__ src/main.cpp
         src/Customer.cpp
         lib_h/Customer.h
         src/FilesReader.cpp
-        lib_h/FilesReader.h)
+        lib_h/FilesReader.h
+        lib_h/Path.h
+        src/make_newAccount.cpp
+        lib_h/make_newAccount.h
+        lib_h/Permmission.h
+)

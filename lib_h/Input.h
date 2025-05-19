@@ -9,7 +9,7 @@
 
 class Input {
         public:
-           ll getInt();
+           long long getInt();
            double getDouble();
            bool getBool();
            char getChar();

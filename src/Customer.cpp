@@ -6,3 +6,6 @@
 string Customer::permission() {
     return "Customer";
 }
+Customer::Customer() {
+
+}

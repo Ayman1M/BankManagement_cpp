@@ -35,18 +35,18 @@
 #include <random>
 //#include <QString>
 using namespace std;
-using ll = long long;
-using ld = long double;
-using pii = pair<int, int>;
-using pll = pair<ll, ll>;
-using pdd = pair<double, double>;
-using pss = pair<string, string>;
-using vi = vector<int>;
-using vl = vector<ll>;
-using vd = vector<double>;
-using vs = vector<string>;
-using sh = short;
-using std::chrono::duration;
+// using ll = long long;
+// using ld = long double;
+// using pii = pair<int, int>;
+// using pll = pair<ll, ll>;
+// using pdd = pair<double, double>;
+// using pss = pair<string, string>;
+// using vi = vector<int>;
+// using vl = vector<ll>;
+// using vd = vector<double>;
+// using vs = vector<string>;
+// using sh = short;
+// using std::chrono::duration;
 //using std::thread::chrono;
 
 

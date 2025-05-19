@@ -10,7 +10,7 @@
 class Customer : public User {
     public:
         string permission() override ;
-
+        explicit Customer();
 
 };
 

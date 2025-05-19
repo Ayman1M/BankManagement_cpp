@@ -17,7 +17,7 @@ string User::get_email() {
 string User::get_password() {
     return password;
 }
-ll User::get_phone_number() {
+long long User::get_phone_number() {
     return phone_number;
 }
 string User::get_address() {
@@ -55,7 +55,7 @@ string User::set_password() {
     return password;
 }
 
-ll User::set_phone_number() {
+long long User::set_phone_number() {
     do {
         cout << "Enter your phone number(10 digits): ";
          this->phone_number = in.getInt();

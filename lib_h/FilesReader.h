@@ -11,15 +11,16 @@ class FilesReader {
     public:
         vector<string> lines;
         vector<string> words;
-        ll word_count;
-        ll line_count ;
+        long word_count;
+        long line_count ;
     private:
         string path_file; fstream file;
         vector<string> read_file_by_line();
         vector<string> read_file_by_word();
     public:
-       explicit FilesReader(const string path);
-    ~FilesReader() {}
+       explicit FilesReader(const string path );
+       //
+        ~FilesReader() {}
 };
 
 

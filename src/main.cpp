@@ -4,8 +4,12 @@
 //#include "../lib_h/Input.h"
 //#include "../lib_h/Admin.h"
 #include "../lib_h/FilesReader.h"
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+#include "../lib_h/Path.h"
+#include "../lib_h/User.h"
+#include "../lib_h/Admin.h"
 int main() {
+    User *user = new Admin();
+    cout<< user->permission();
 
     return 0;
 }
