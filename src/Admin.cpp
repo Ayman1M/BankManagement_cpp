@@ -15,14 +15,14 @@ bool Admin::make_newCustomer(const string& id){
     User* customer_local = new Customer();
     vector<string> data;
     vector<string> account;
-     customer_local->set_id();
+     //customer_local->set_id();
      customer_local->set_name();
      customer_local->set_email();
      customer_local->set_password();
      customer_local->set_phone_number();
      customer_local->set_address();
 
-    data.push_back(customer_local->get_id());
+    data.push_back(id);
     data.push_back(customer_local->get_name());
     data.push_back(customer_local->get_email());
     data.push_back(to_string(customer_local->get_phone_number()));
@@ -90,10 +90,10 @@ bool Admin::see_all_customers_id() {
 bool Admin::see_all_admins_id() {
     FilesReader file(Path::id_Admins);
     if (file.line_count == 0) {
-        cout << "No customers found." << endl;
+        cout << "No Admins found." << endl;
         return false;
     }
-    cout << "List of all customers:" << endl;
+    cout << "List of all Admins:" << endl;
     for (const auto& line : file.lines) {
         cout << line << endl;
         cout << string(20,'-');

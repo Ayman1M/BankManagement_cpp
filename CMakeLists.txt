@@ -22,4 +22,6 @@ add_executable(BankManagement_c__ src/main.cpp
         src/make_newAccount.cpp
         lib_h/make_newAccount.h
         lib_h/Permmission.h
+        lib_h/database_isExit.h
+        lib_h/Make_database.h
 )

@@ -7,9 +7,9 @@
 FilesReader::FilesReader(const string path) {
     this->path_file = path;
     lines = read_file_by_line();
-    line_count = lines.size();
+    line_count = lines.size()+1;
     words = read_file_by_word();
-    word_count = words.size();
+    word_count = words.size()+1;
 }
 
 vector<string> FilesReader::read_file_by_line() {
